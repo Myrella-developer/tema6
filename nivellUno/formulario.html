@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario PHP y HTML</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Formulario PHP y HTML</h1>
+    <form action="upload.php" method="POST" enctype="multipart/form-data">
+        <h3>Ingressa los dados solicitados</h3>
+        <label for="name">Nombre: </label> 
+        <p><input type="text" name="name" autofocus="autofocus" required="required" pattern="[A-Za-z]+" /></p>
+
+        <label for="surname">Apellidos: </label>
+        <p><input type="text" name="surname" required="required" pattern="[A-Z a-z]+"/></p>
+
+        <label for="email">Email: </label>
+        <p><input type="email" name="email" required="required"/></p>
+
+        <label for="number">Telefono: </label>
+        <p><input type="number" name="number" required="required"></p>
+        
+        <input type="submit" value="Enviar"/>
+
+        
+         
+    </form>
+
+</body>
+</html>
