@@ -1,9 +1,13 @@
 <?php
-    class User{
-        public function data() {
-            var_dump(__CLASS__);
+    class Car{
+        public function myValue() {
+            return __CLASS__;
         }
     }
 
-    (new User) ->data();
+    $volvo = new Car();
+    echo $volvo->myValue();
+    echo "<br/>";
+    echo "La classe Car fue creada en lo directorio: ".(__DIR__);
+
 ?>
